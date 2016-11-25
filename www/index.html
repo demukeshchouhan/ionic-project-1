@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+    <title></title>
+
+    <link rel="manifest" href="manifest.json">
+
+    <!-- un-comment this code to enable service worker
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log('service worker installed'))
+          .catch(err => console.log('Error', err));
+      }
+    </script>-->
+
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- IF using Sass (run gulp sass first), then uncomment below and remove the CSS includes above
+    <link href="css/ionic.app.css" rel="stylesheet">
+    -->
+
+    <!-- ionic/angularjs js -->
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
+
+    <!-- your app's js -->
+    <script src="js/app.js"></script>
+  </head>
+  <body ng-app="starter">
+
+    <ion-pane>
+      <ion-header-bar class="bar-positive">
+<button class="button icon icon-left ion-navicon button-clear"></button>
+        <h1 class="title">Ionic Blank Starter</h1>
+<button class="button icon icon-left ion-gear-a button-clear"></button>
+      </ion-header-bar>
+<div class="bar bar-subheader">
+    <h2 class="title">Ionic Sub-Header</h2>
+</div>
+      <ion-content class="has-subheader padding">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam exercitationem accusamus, voluptatem atque voluptate! Earum doloremque deserunt incidunt reprehenderit magni, accusantium qui ipsum pariatur sunt!</p>
+<button class="button button-positive">Button 1</button>
+<button class="button button-positive button-outline button-block">Button 2</button>
+<p>
+  <h2>Ionic <i class="icon ion-ionic"></i></h2>
+<button class="button button-positive">ion-happy-outline
+<i class="icon icon-left ion-happy-outline "></i>
+</button>
+</p>
+<h2 class="title">Button bar group</h2>
+<div class="button-bar ">
+  <button class="button button-positive icon icon-right ion-social-twitter">twitter</button>
+  <button class="button button-positive icon icon-right ion-social-facebook">facebook</button>
+  <button class="button button-positive icon icon-right ion-social-instagram">instagram</button>
+</div>
+
+<h2 class="title">Button clear</h2>
+<div class="button-bar ">
+  <button class="button button-clear button-energized icon icon-left ion-social-twitter">twitter</button>
+  <button class="button button-clear button-calm  icon icon-left ion-social-facebook">facebook</button>
+  <button class="button button-clear button-balanced icon icon-left ion-social-instagram">instagram</button>
+  <button class="button button-clear button-dark icon icon-left ion-social-youtube">youtube</button>
+</div>
+
+
+<ion-list>
+  <ion-item class="item-icon-left" >
+    <i class="icon ion-folder"></i>
+    Check Mail
+  </ion-item>
+  <ion-item class="item-icon-left item-icon-right" badge="0">
+    <i class="icon ion-bag"></i>
+    Cart
+  <!-- <span class="item-note">Empty</span> -->
+  <span class="badge badge-positive">0</span>
+  </ion-item>
+  <ion-item>item- 03</ion-item>
+  <ion-item>item- 04</ion-item>
+  <ion-item>item- 05</ion-item>
+  <ion-item class="item-icon-right">
+    <i class="icon ion-ios-bell"></i>
+    Notification
+  </ion-item>
+  <ion-item>item- 07</ion-item>
+  <ion-item>item- 08</ion-item>
+  <ion-item>item- 09</ion-item>
+  <ion-item>item- 10</ion-item>
+  <ion-toggle ng-model="shouldShowDelete">
+    Show Delete?
+  </ion-toggle>
+<div class="item item-divider">Other List</div>
+  <ion-item>item- 11</ion-item>
+  <ion-item>item- 12</ion-item>
+  <ion-item>item- 13</ion-item>
+  <ion-item>item- 14</ion-item>
+  <ion-item>item- 15</ion-item>
+
+</ion-list>
+
+<div class="list list-inset">
+<div class="item">
+  <p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus sed repellendus voluptates, in aliquam sint!
+  </p>
+</div>
+</div>
+
+<div class="card item-text-wrap">
+<div class="item item-divider">
+  <h2>Header</h2>
+</div>
+<div class="item item-image">
+  <img src="http://placehold.it/600x200" alt="">
+</div>
+  <div class="item">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, repudiandae sit, doloremque in eligendi, ratione quam sint possimus nam unde veniam fuga praesentium libero itaque est obcaecati sunt aliquid sequi porro? Laboriosam, a nisi temporibus quisquam numquam, iste provident, soluta commodi illo ad, doloremque veniam.
+    </p>
+  </div>
+</div>
+
+<!-- forms -->
+
+<div class="card">
+<div class="item item-divider">
+  <h2 class="title">Create New Acccount </h2>
+</div>
+  <label class="item item-input item-stacked-label">
+<span class="input-label">Firstname</span>
+      <input type="text" placeholder="Firstname">
+  </label>
+
+  <label class="item item-input item-stacked-label">
+<span class="input-label">Lastname</span>
+      <input type="text" placeholder="Lastname">
+  </label>
+
+  <label class="item item-input item-stacked-label">
+<span class="input-label">Email</span>
+      <input type="text" placeholder="Email">
+  </label>
+<div class="item item-divider">Optional</div>
+
+<div class="item item-checkbox">
+  <label class="checkbox">
+    <input type="checkbox">
+  </label>
+<span class="input-label">Need Weekly Newsletter</span>
+</div>
+
+<div class="item item-checkbox checkbox-calm">
+  <label class="checkbox">
+      <input type="checkbox">
+  </label>
+
+<span class="input-label">Buy me a beer</span>
+</div>
+
+<div class="item item-divider">Social Accounts</div>
+
+<div class="padding">
+        <button class="button button-block button-positive">Create Account</button>
+      </div>
+      </div>
+
+
+
+
+
+
+<ion-list>
+    <ion-radio ng-model="choice" ng-value="'A'">Choose A</ion-radio>
+    <ion-radio ng-model="choice" ng-value="'B'">Choose B</ion-radio>
+  </ion-list>
+
+
+<div class="padding-bottom"></div>
+<div class="padding-bottom"></div>
+<div class="padding-bottom"></div>
+<div class="padding-bottom"></div>
+</div>
+
+
+      </ion-content>
+
+
+<!-- <ion-footer-bar class="bar-positive">
+  <h1 class="title">Ionic Footer Bar</h1>
+</ion-footer-bar> -->
+
+<!-- <div class="tabs tabs-positive tabs-icon-top padding-top"> -->
+<ion-tabs class="tabs-icon-top tabs-striped tabs-positive">
+  <ion-tab badge="5" badge-style="badge-assertive" icon-off="ion-ios-home-outline" title="Home" icon="ion-ios-home"></ion-tab>
+  <ion-tab title="About" icon="ion-person"></ion-tab>
+  <ion-tab title="Calender" icon="ion-calendar"></ion-tab>
+</ion-tabs>
+
+
+
+
+    </ion-pane>
+  </body>
+</html>
