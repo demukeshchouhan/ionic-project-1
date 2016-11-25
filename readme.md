@@ -1,1 +1,1 @@
-## ionic intial project
+## ionic initial project
